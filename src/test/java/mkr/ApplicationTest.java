@@ -1,10 +1,10 @@
 package mkr;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class ApplicationTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void main() {
     }
 }
