@@ -1,0 +1,6 @@
+keycloak:
+  auth-server-url: http://keycloak.host
+  realm: myproject
+  resource: myproject-app
+  public-client: true
+  use-resource-role-mappings: true
