@@ -27,7 +27,7 @@ public class DefaultRestExceptionHandler extends ResponseEntityExceptionHandler 
 
     @ExceptionHandler(InvalidBearerTokenException.class)
     protected ResponseEntity<Object> handleException(InvalidBearerTokenException ex) {
-        return buildResponseEntity(UNAUTHORIZED, "Access denied1", ex);
+        return buildResponseEntity(UNAUTHORIZED, "Access denied", ex);
     }
 
     @ExceptionHandler(AccessDeniedException.class)
