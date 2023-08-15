@@ -1,6 +1,20 @@
-keycloak:
-  auth-server-url: http://keycloak.host
-  realm: myproject
-  resource: myproject-app
-  public-client: true
-  use-resource-role-mappings: true
+server:
+  port: 8081
+
+spring:
+  main.allow-bean-definition-overriding: false
+  application.name: front-api
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          #write here your realm urls
+          jwk-set-uri: http://localhost:8080/realms/test/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8080/realms/test
+
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        security:
+#          TRACE
